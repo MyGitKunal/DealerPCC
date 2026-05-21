@@ -1,0 +1,7 @@
+packages:
+  - '.'
+  - 'backend'
+
+ignoredBuiltDependencies:
+  - '@swc/core'
+  - esbuild
