@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* VW Group Design System - Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 202 100% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 202 100% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 202 100% 10%;
+
+    /* Deep Space Blue as primary */
+    --primary: 202 100% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 166 100% 27%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Electric Neon accent */
+    --accent: 78 99% 51%;
+    --accent-foreground: 202 100% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 48 96% 56%;
+    --warning-foreground: 202 100% 10%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 202 100% 10%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 202 100% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 78 99% 51%;
+    --sidebar-primary-foreground: 202 100% 10%;
+    --sidebar-accent: 166 100% 27%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 202 80% 15%;
+    --sidebar-ring: 78 99% 51%;
+  }
+
+  .dark {
+    --background: 202 100% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 202 100% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 202 100% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 78 99% 51%;
+    --primary-foreground: 202 100% 10%;
+
+    --secondary: 166 100% 27%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 202 50% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 78 99% 51%;
+    --accent-foreground: 202 100% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 48 96% 56%;
+    --warning-foreground: 202 100% 10%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 202 50% 20%;
+    --input: 202 50% 20%;
+    --ring: 78 99% 51%;
+
+    --sidebar-background: 202 100% 6%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 78 99% 51%;
+    --sidebar-primary-foreground: 202 100% 10%;
+    --sidebar-accent: 166 100% 27%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 202 80% 10%;
+    --sidebar-ring: 78 99% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
